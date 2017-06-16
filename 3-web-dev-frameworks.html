@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Dev Frameworks</title>
+
+		<meta name="description" content="Web Dev Frameworks">
+		<meta name="author" content="Tolits Delizo">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<!-- <link rel="stylesheet" href="style.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!-- 1 min -->
+				<section>
+					<h1>Web Dev Frameworks</h1>
+					<p class="fragment"><em>(what are those?)</em></p>
+					<p>
+						<small>&copy; 2017 <a href="http://tolitsdelizo.info">Tolits Delizo, MIT</a> / <a href="http://twitter.com/tolitsAhaMoment" target="_blank">@tolitsAhaMoment</a></small>
+					</p>
+				</section>
+
+				<!-- 12 min -->
+				<section>
+					<section>
+						<h4 class="fragment">What are web development frameworks?</h4>
+						<p class="fragment">
+							Software providing generic functionality that can be selectively changed by additional user-written code, thus providing application-specific software.
+						</p>
+					</section>
+					<section>
+						<h3 class="fragment">"Don't reinvent the wheel."</h3>
+						<p class="fragment"><em>Not yet.</em></p>						
+					</section>
+					<section>
+						<h3 class="fragment">Web Dev Framework is a subset of Software Framework</h3>
+					</section>
+					<section>
+						<h3 class="fragment">What is a Software Framework?</h3>
+						<ul>
+							<li>provides a standard way to build and deploy applications</li>
+							<li>facilitate development of software applications, products and solutions</li>
+						</ul>
+					</section>
+					<section>
+						<h3 class="fragment">Key Distinguishing Features of a Framework</h3>
+						<ul>
+							<li>inversion of control, "overall program's flow of control is not dictated by the caller, but by the framework"</li>
+							<li>extensibility, programmers can add specialized user code to provide specific functionality</li>
+							<li>users can extend the framework, but should not modify its code</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- 4min -->
+				<section>
+					<h4 class="fragment">Question #1</h4>
+					<p class="fragment">Give 5 common features of a web application.</p>	
+				</section>
+
+				<!-- 5 min -->
+				<section>
+					<h2>How does this relate to me?</h2>
+				</section>
+
+				<!-- 10 min -->
+				<section>
+					<section>
+						<h2>CSS Framework</h2>
+						<p class="fragment"><a href="http://getbootstrap.com/">Bootstrap</a></p>
+					</section>
+					<section>
+						<h2>JavaScript Framework</h2>
+						<p class="fragment"><a href="https://jquery.com/">jQuery</a></p>
+					</section>
+					<section>
+						<h2>PHP Framework</h2>
+						<p class="fragment"><a href="https://laravel.com/">Laravel</a></p>
+					</section>
+					<section>
+						<h2>Ruby Framework</h2>
+						<p class="fragment"><a href="http://rubyonrails.org/">RoR</a></p>
+					</section>
+					<section>
+						<h2>HTML5 Framework</h2>
+						<p class="fragment"><a href="http://ionicframework.com/">Ionic</a></p>
+					</section>
+				</section>
+
+				<section>
+					<h4>Further reading</h4>
+					<ul>
+						<li>Framework Design: <a href="http://www.riehle.org/computer-science/research/dissertation/diss-a4.pdf">http://www.riehle.org/computer-science/research/dissertation/diss-a4.pdf</a></li>
+						<li>Copy and Pasting from StackOverflow: <a href="https://www.gitbook.com/book/tra38/essential-copying-and-pasting-from-stack-overflow/details">https://www.gitbook.com/book/tra38/essential-copying-and-pasting-from-stack-overflow/details</a></li>
+					</ul>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
