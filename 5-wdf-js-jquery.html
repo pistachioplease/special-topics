@@ -44,8 +44,8 @@
 				<!-- 1 min -->
 				<section>
 					<h6>Web Development Frameworks</h6>
-					<h1>jQuery</h1>
-					<p class="fragment"><em>(for the noob?)</em></p>
+					<h1>jQuery and AJAX</h1>
+					<p class="fragment"><em>(for the n00b?)</em></p>
 					<p>
 						<small>&copy; 2017 <a href="http://tolitsdelizo.info">Tolits Delizo, MIT</a> / <a href="http://twitter.com/tolitsAhaMoment" target="_blank">@tolitsAhaMoment</a></small>
 					</p>
@@ -54,47 +54,229 @@
 				<!-- 8 min -->
 				<section>
 					<section>
-						<h4>What is Bootstrap?</h4>
+						<h2>What is jQuery?</h2>
 						<p class="fragment">
-							A popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+							jQuery is a fast, small, and feature-rich JavaScript library. It makes things like <strong>HTML document traversal and manipulation</strong>, <strong>event handling</strong>, <strong>animation</strong>, and <strong>Ajax</strong> much simpler with an easy-to-use API that works across a multitude of browsers.
 						</p>
-						<p class="fragment">Bootstrap makes front-end web development faster and easier.</p>
 					</section>
 					<section>
-						<img src="images/sass-less.png">
-						<h3 class="fragment">Preprocessors</h3>
-						<p class="fragment">Bootstrap ships with <strong>vanilla CSS</strong>, but its source code utilizes the two most popular CSS preprocessors, <strong>Less and Sass</strong>. Quickly get started with precompiled CSS or build on the source.</p>						
+						<h3>Why use jQuery?</h3>
+						<ul>
+							<li class="fragment">Lightweight</li>
+							<li class="fragment">CSS3 Compliant</li>
+							<li class="fragment">Cross-Browser</li>
+							<li class="fragment">Makes life easier</li>
+						</ul>
 					</section>
 					<section>
-						<img src="images/devices.png">
-						<h3 class="fragment">One framework, every device.</h3>
-						<p class="fragment">Bootstrap easily and efficiently scales your websites and applications with a <strong>single code base</strong>, from phones to tablets to desktops with CSS media queries.</p>						
+						<h3>How to use jQuer?y</h3>
+						<p>1. Include jquery using local file or CDN. (on &lt;head&gt; or &lt;body&gt;)</p>
+						<pre><code class="hljs" data-trim contenteditable>
+&lt;!-- server copy --&gt; 
+&lt;script src=&quot;js/jquery.js&quot;&gt;&lt;/script&gt; 
+&lt;!-- CDN copy --&gt; 
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+						</code></pre>	
 					</section>
 					<section>
-						<img src="images/components.png">
-						<h3 class="fragment">Full of features</h3>
-						<p class="fragment">With Bootstrap, you get <strong>extensive and beautiful documentation</strong> for common HTML elements, dozens of custom HTML and CSS components, and awesome jQuery plugins.</p>						
-					</section>	
+						<h3>How to use jQuery?</h3>
+						<p>2. Use jQuery!</p>
+						<pre><code class="hljs" data-trim contenteditable>
+// vanilla JS
+window.onload = function() { 
+    alert( "welcome" ); 
+};
+
+// jQuery
+$( document ).ready(function() {
+   alert( "welcome" ); 
+});
+						</code></pre>	
+					</section>
 				</section>
 
 				<!-- 4 min -->
 				<section>
-					<h3>But, why?</h3>
-					<p class="fragment">Why not?</p>
-					<p class="fragment">
-						<a href="http://expo.getbootstrap.com/">showcase</a> | <a href="https://www.kalibrr.com/c/stratpoint-technologies-inc/jobs/61675/ui-ux-designer?similar_job_code=0&app_source=job-board-1-4-15-32">job opening</a>
-					</p>
+					<section>
+						<h3>JS Review</h3>
+						<pre><code class="hljs" data-trim contenteditable>
+// string
+var str = 'abcd';
+var str = "abcd";
+
+// numbers
+var num = 1;
+var num = 1.23;
+
+// boolean
+var bool = true;
+
+// array (and for loop)
+var arr = [1, 2, 3];
+for (var i = 0; i&lt;arr.length; i++)
+{
+    console.log(arr[i]);
+}
+
+// objects
+var emp = {fname: “Seema”, age: 29}; 
+console.log(emp.fname);
+						</code></pre>	
+					</section>
+					<section>
+						<h3>JS Review</h3>
+						<pre><code class="hljs" data-trim contenteditable>
+// named function
+function func (a, b) {
+	// some code here
+}
+
+// anonymous function assigned to a variable
+var func = funct () {
+	// some code here
+}
+
+// anon function passed to a method
+$(document).ready(function() {
+    // some code here
+});
+						</code></pre>	
+					</section>
+					<section>
+						<h3>JS Review</h3>
+						<pre><code class="hljs" data-trim contenteditable>
+// global variable
+var g;
+
+function func () {
+	var a = 1; // local variable
+}
+
+// callback functions
+$("body").click(function(event) {
+     console.log(“clicked:” + event.target);
+});
+						</code></pre>	
+					</section>
+					<section>
+						<h4>JS Review</h4>
+						<h3>How does DOM look like?</h3>
+					</section>						
+					<section>
+						<img src="images/dom.jpg" />
+					</section>
 				</section>
+
+				<!-- 4 min -->
+				<section>
+					<section>
+						<h3>jQuery Basics</h3>
+						<pre><code class="hljs" data-trim contenteditable>
+&lt;a href=&quot;http://jquery.com/&quot; class=&quot;test&quot;&gt;jQuery&lt;/a&gt;
+
+// add and removing an html class
+$( "a" ).addClass( "test" );
+$( "a" ).removeClass( "test" );
+
+// special effects
+$( "a" ).click(function( event ) {
+    event.preventDefault();
+    $( this ).hide( "slow" );
+});
+
+// events
+$( "form" ).submit(function( event ) {
+    event.preventDefault();
+    console.log("form submitted");
+});
+						</code></pre>	
+					</section>
+					<section>
+						<h3>XHR/AJAX</h3>
+						<p>Traditionally webpages required <strong>reloading to update their content</strong>. When the user needed updated content, the server had to reconstruct the entire web page and resend all of the HTML, CSS, JavaScript, as well as the user's updated data. <em>Ideally, the server should only have to send the user's new messages, not the entire page.</em></p>
+					</section>
+					<section>
+						<h3>XHR/AJAX</h3>
+						<p>By 2003, all the major browsers solved this issue by adopting the <strong>XMLHttpRequest (XHR)</strong> object, allowing browsers to communicate with the server <em>without requiring a page reload</em>.</p>
+					</section>
+					<section>
+						<h3>XHR/AJAX</h3>
+						<p>The XMLHttpRequest object is part of a technology called <strong>Ajax (Asynchronous JavaScript and XML)</strong>. Using Ajax, data could then be passed between the browser and the server, using the XMLHttpRequest API, without having to reload the web page. </p>
+					</section>
+					<section>
+						<h3>XHR/AJAX</h3>
+						<pre><code class="hljs" data-trim contenteditable>
+// ajax
+$.ajax();
+$.get();
+$.getScript();
+$.getJSON();
+$.post();
+$().load();
+						</code></pre>	
+					</section>
+					<section>
+						<h3>XHR/AJAX: Key Concepts</h3>
+						<h6>GET vs POST</h6>
+					</section>
+					<section>
+						<h3>XHR/AJAX: Key Concepts</h3>
+						<h6>Data Types</h6>
+					</section>
+					<section>
+						<h3>XHR/AJAX: Key Concepts</h3>
+						<h6>A is for Asynchronous</h6>
+					</section>
+					<section>
+						<h3>XHR/AJAX</h3>
+						<pre><code class="hljs" data-trim contenteditable>
+$.ajax({
+    // The URL for the request
+    url: "post.php",
+    // The data to send (will be converted to a query string)
+    data: {
+        id: 123
+    },
+    // Whether this is a POST or GET request
+    type: "GET",
+    // The type of data we expect back
+    dataType : "json",
+})
+// Code to run if the request succeeds (is done);
+// The response is passed to the function
+.done(function( json ) {
+	$( "&lt;h1&gt;" ).text( json.title ).appendTo( "body" );
+	$( "&lt;div class=\"content\"&gt;").html( json.html ).appendTo( "body" );
+})
+// Code to run if the request fails; the raw request and
+// status codes are passed to the function
+.fail(function( xhr, status, errorThrown ) {
+	alert( "Sorry, there was a problem!" );
+	console.log( "Error: " + errorThrown );
+	console.log( "Status: " + status );
+	console.dir( xhr );
+})
+// Code to run regardless of success or failure;
+.always(function( xhr, status ) {
+	alert( "The request is complete!" );
+});
+
+// forms
+$( "#myForm" ).serialize();
+						</code></pre>	
+					</section>
+				</section>
+
+				<!-- discuss css activity code -->
 
 				<section>
 					<h4>Further reading</h4>
 					<ul>
-						<li>Bootstrap: <a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
-						<li>Bootstrap in 24 hours: <a href="https://www.amazon.com/gp/product/0672337045/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=whatpixel-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0672337045&linkId=52b8bba98d19b07e44ac1bb3def0d388">in 24 hours</a></li>
+						<li>jQuery: <a href="https://jquery.com/">https://jquery.com/</a></li>
+						<li>jQuery AJAX: <a href="https://learn.jquery.com/ajax">AJAX</a></li>
 					</ul>
 				</section>
 			</div>
-
 		</div>
 
 		<!-- html barebones -->
