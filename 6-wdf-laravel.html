@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Laravel</title>
+
+		<meta name="description" content="Laravel">
+		<meta name="author" content="Tolits Delizo">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<!-- <link rel="stylesheet" href="style.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!-- 1 min -->
+				<section>
+					<h6>MVC Framework</h6>
+					<h1>Laravel</h1>
+					<p class="fragment"><em>(lvl up?)</em></p>
+					<p>
+						<small>&copy; 2017 <a href="http://tolitsdelizo.info">Tolits Delizo, MIT</a> / <a href="http://twitter.com/tolitsAhaMoment" target="_blank">@tolitsAhaMoment</a></small>
+					</p>
+				</section>
+
+				<!-- 8 min -->
+				<section>
+					<section>
+						<h3>What is an MVC Framework?</h3> <!-- recitation -->
+						<p class="fragment">
+							MVC is a software architectural pattern. It divides data fetching (Model), user interfaces (View) and data and command manipulation (Controller).
+						</p>
+					</section>
+					<section>
+						<h4>Components</h4>
+						<ul>
+							<li>The model is the central component of the pattern. It directly manages the data, logic and rules of the application.</li>
+							<li>A view can be any output representation of information. Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants.</li>
+							<li>The third part, the controller, accepts input and converts it to commands for the model or view.</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Interactions</h4>
+						<ul>
+							<li>A model stores data that is retrieved according to commands from the controller and displayed in the view.</li>
+							<li>A view generates new output to the user based on changes in the model.</li>
+							<li>A controller can send commands to the model to update the model's state (e.g., editing a document). It can also send commands to its associated view to change the view's presentation of the model (e.g., scrolling through a document).</li>
+						</ul>
+					</section>
+					<section>
+						<div style="background-color: white;"><img src="images/500px-MVC-Process.svg.png" alt=""></div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Why choose Laravel?</h3>
+						<img src="images/1427547421php_framework_popularity_at_work_-_sitepoint2c_2015-1024x625.png">
+					</section>
+					<section>
+						<h3>Why choose Laravel?</h3>
+						<p><strong>Ease of using open source code: </strong>uses Composer as a dependency manager to add framework-agnostic and Laravel-specific PHP packages available from the Packagist repository.</p>
+					</section>
+					<section>
+						<h3>Why choose Laravel?</h3>
+						<p><strong>Eloquent ORM</strong></p>
+					</section>
+					<section>
+						<h3>Why choose Laravel?</h3>
+						<p><strong>Query Builder</strong></p>
+					</section>
+					<section>
+						<h3>Why choose Laravel?</h3>
+						<p><strong>Blade Templating Engine</strong></p>
+					</section>
+					<section>
+						<h3>Why choose Laravel?</h3>
+						<p><strong>Migrations</strong></p>
+					</section>
+					<section>
+						<h3>Why choose Laravel?</h3>
+						<p><strong>Database Seeding</strong></p>
+					</section>
+					<section>
+						<h3>Why choose Laravel?</h3>
+						<p><strong>Unit Testing</strong></p>
+					</section>
+					<section>
+						<h3>Why choose Laravel?</h3>
+						<p><strong>Artisan CLI</strong></p>
+					</section>
+				</section>
+
+				<!-- laravel authentication app, quick walk through -->
+
+				<section>
+					<h4>Further reading</h4>
+					<ul>
+						<li><a href="https://laravel.com/docs/5.4">Laravel Documentation</a></li>
+						<li><a href="http://cheats.jesse-obrien.ca/">Laravel Cheatsheet</a></li>
+						<li><a href="https://books.google.com.ph/books?id=BWO4CAAAQBAJ&printsec=frontcover&redir_esc=y#v=onepage&q&f=false">Laravel Essentials</a></li>
+						<li><a href="http://creative-punch.net/articles/php-articles/laravel-tutorials/">Laravel Tutorial</a></li>
+						<li><a href="https://www.worldcat.org/search?q=isbn%3A9781783287987">Laravel Design Patterns and Best Practices</a></li>
+					</ul>
+				</section>
+			</div>
+
+		</div>
+
+		<!-- html barebones -->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
