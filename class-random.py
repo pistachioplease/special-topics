@@ -3,7 +3,7 @@ import random
 population = [
 #'AMBI, TIM M. ',
 #'ABDUL, JEMARIE M. ',
-'ACACIO, CHARINA MAE T. ',
+#'ACACIO, CHARINA MAE T. ',
 #'BERNAL, ZOILO ENRICO C. ',
 'CACAS, EARVIN PHILIP M. ',
 'CALIXTO, RHOD SHEFFTON S. ',
