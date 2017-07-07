@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>CLI, GIT and DOM</title>
+		<title>Introduction to UX</title>
 
-		<meta name="description" content="CLI, GIT and DOM">
+		<meta name="description" content="Introduction to UX">
 		<meta name="author" content="Tolits Delizo">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
 		<!-- <link rel="stylesheet" href="style.css"> -->
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -43,163 +43,182 @@
 			<div class="slides">
 				<!-- 1 min -->
 				<section>
-					<h1>CLI, GIT and DOM</h1>
-					<p class="fragment"><em>(wtf?)</em></p>
+					<h1>Introduction to UX</h1>
+					<p class="fragment"><em>(sUX?)</em></p>
 					<p>
 						<small>&copy; 2017 <a href="http://tolitsdelizo.info">Tolits Delizo, MIT</a> / <a href="http://twitter.com/tolitsAhaMoment" target="_blank">@tolitsAhaMoment</a></small>
 					</p>
 				</section>
 
-				<!-- 14 min -->
+				<!-- 6 min -->
 				<section>
 					<section>
-						<h2>CLI</h2>
-						<h6 class="fragment">Command-Line Interface</h6>
-						<h6 class="fragment">aka Console User Interface</h6>
-						<p class="fragment">
-							A CLI (command line interface) is a UI to a computer's operating system or an app in which the user responds to a visual prompt by typing in a command on a specified line, receives a response back from the system, and then enters another command, and so forth.
-						</p>						
+						<h2>What is UX?</h2>
+						<p class="fragment">UX stands for User Experience.</p>						
+						<p class="fragment">Everything has a user experience.</p>						
+						<p class="fragment">You don't create user experience, our job is to make it good.</p>	
 					</section>
 					<section>
-						<h3>Anatomy of a CLI</h3>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-~ cd /directory
->>> x = x + 1
-
-~ ls -la
-
-~ rm -rf *
-						</code></pre>
-						<p class="fragment">Prompt command param1 param2 -{option}</p>
+						<p>Goal of UX is make users <em>effective</em>.</p>
 					</section>
 					<section>
-						<h3>Cool Story</h3>
-						<p class="fragment">Trick someone to use the 'rm -rf *' command on a UNIX-based computer. This commands deletes everything on their computer. ;)</p>
-						<p class="fragment">This happened to <a href="https://thenextweb.com/media/2012/05/21/how-pixars-toy-story-2-was-deleted-twice-once-by-technology-and-again-for-its-own-good/">Toy Story 2</a></p>
-					</section>
-					<section>
-						<h3>Command line basics</h3>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-# list files in a directory
-~ ls
-
-# change directories
-~ cd
-~ cd ~
-~ cd -
-
-# create file
-~ touch filename
-
-# create directory
-~ mkdir directory_name
-
-# edit files
-~ nano path_to_file
-
-# remove file
-~ rm
-						</code></pre>
+						<h6>UX is actually doing the process of User Experience Design</h6>
 					</section>
 				</section>
-
-				<!-- 20 miin -->
-				<section>
-					<section>
-						<h2>GIT</h2>
-						<h6 class="fragment">like a really epic save button</h6>
-						<p class="fragment">GIT is a version control system (VCS)</p>						
-						<p class="fragment">A save (commit) in Git would record differences of files and folders AND keep a historical record of each save.</p>						
-					</section>
-
-					<section>
-						<h3>Types of VCS</h3>
-						<h6 class="fragment">Local Version Control Systems</h6>
-						<img src="images/l-vcs.png" height="400" class="fragment">
-					</section>
-					<section>
-						<h3>Types of VCS</h3>
-						<h6 class="fragment">Centralized Version Control Systems</h6>
-						<img src="images/c-vcs.png" height="400" class="fragment">
-					</section>
-					<section>
-						<h3>Types of VCS</h3>
-						<h6 class="fragment">Distributed Version Control Systems</h6>
-						<img src="images/d-vcs.png" height="400" class="fragment">
-					</section>
-
-					<section>
-						<h3>Why use GIT?</h3>
-						<h6 class="fragment">History of Files</h6>
-						<img src="images/commit-detail.png" class="fragment">
-					</section>
-					<section>
-						<h3>Why use GIT?</h3>
-						<h6 class="fragment">Distributed Development</h6>
-						<img src="images/commits.png" class="fragment">
-					</section>
-					<section>
-						<h3>Why use GIT?</h3>
-						<h6 class="fragment">Community</h6>
-						<p class="fragment">Git is very popular among open source projects. This means it’s easy to leverage 3rd-party libraries and encourage others to fork your own open source code.</p>
-					</section>
-					
-					<section>
-						<h3>GIT Terms (1)</h3>
-						<p>Version Control: any system that allows you to understand the history of the file and how it has progressed</p>
-
-						<p>Commit: an annotated “snapshot” of the differences made to the system at a given point in time</p>
-					</section>
-					<section>
-						<h3>GIT Terms (2)</h3>
-						<p>Local: refers to the computer you’re working on this very minute</p>
-
-						<p>Remote: refers to an online location</p>
-
-						<p>Repository (repo): a special folder configured with Git superpowers containing all the files pertaining to your project/system</p>
-
-						<p>Github: takes your local commit history and hosts it remotely so that you can access it from any computer</p>
-					</section>
-					<section>
-						<h3>GIT Terms (3)</h3>
-						<p>Pushing: the action of taking local Git commits (and whatever work these encompass) and putting them online on Github</p>
-
-						<p>Pulling: the action of taking online Github commits and bringing them into your local machine</p>
-					</section>
-
-				</section>
-
-				<section>
-					<section>
-						<h2>DOM</h2>
-						<h6>Document Object Model</h6>
-						<p class="fragment">The Document Object Model (DOM) represents that same document so it can be manipulated. The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript (more on this soon).</p>
-					</section>
-					<section>
-						<h3>How does DOM look like?</h3>
-					</section>						
-					<section>
-						<img src="images/dom.jpg" />
-					</section>						
-				</section>
-
-					<!-- <section>
-						<h3>Activitiy</h3>
-						<pre class="fragment"><code class="hljs" data-trim contenteditable>
-$ git remote add origin remote_repository_URL
-$ git remote -v
-
-# change url: git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
-						</code></pre>
-					</section> -->
 				
+				<!-- 8 min -->
+				<section>
+					<section>
+						<h2>UX vs UI</h2>
+					</section>
+					<section>
+						<h3>What is UI?</h3>
+						<p class="fragment">User interface involves elements that "interface" between a computer and a user.</p>
+						<p class="fragment">User Interface Design deals with the look and feel, the presentation and interactivity of a product.</p>
+					</section>
+					<section>
+						<blockqoute>
+							If you imagine a product as the human body, the bones represent the code which give it structure. The organs represent the UX design: measuring and optimizing against input for supporting life functions. And UI design represents the cosmetics of the body–its presentation, its senses and reactions.
+						</blockqoute>
+					</section>
+					<section>
+						<h3>Confused still?</h3>
+						<blockquote class="fragment">
+							User Experience (UX) and User Interface (UI) are some of the most confused and misused terms in our field. A UI without UX is like a painter slapping paint onto canvas without thought; while UX without UI is like the frame of a sculpture with no paper mache on it. A great product experience starts with UX followed by UI. Both are essential for the product’s success. - Rahul Varshney, Co-creator of Foster.fm
+						</blockquote>
+					</section>
+				</section>
+
+				<!-- 8 min -->
+				<section>
+					<section>
+						<h2>What is User Experience Design?</h2>
+						<p class="fragment">process of enhancing customer satisfaction and loyalty by improving usability, ease of use, and pleasure provided in the interaction between the customer and the product.</p>
+						<p class="fragment">Don Norman, a cognitive scientist and co-founder of the Nielsen Norman Group Design Consultancy, is credited with inventing the term in the late 1990’s</p>
+					</section>
+					<section>
+						<h2>"Doing" UX involves</h2>
+						<ul>
+							<li>Researching to understand users</li>
+							<li>Developing ideas to solve user's needs - and the needs of the business</li>
+							<li>Building and measuring solutions in the real world to see if they work</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>User Goals and Business Goals</h2>
+					</section>
+					<section>
+						<h3>User Goals</h3>
+						<p class="fragment">Users always want something.</p>
+						<p class="fragment">Users want to do something productive (or not).</p>
+					</section>
+					<section>
+						<h3>Business Goals</h3>
+						<p class="fragment">Every organization has a reason for creating an app.  It might be for money, brand awareness, or getting new members for a community.</p>
+						<p class="fragment">Often called "metrics" or "KPI's" by business folks.</p>
+					</section>
+					<section>
+						<p class="fragment">UX designers should align those goals so the business benefits when the user reaches their goal.</p>
+						<p class="fragment">If YouTube made you watch 60 seconds of ads for every 30 seconds of videos, they would die a quick, painful death.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>The 5 Main Ingredients of UX</h2>
+					</section>
+					<section>
+						<h3>Psychology</h3>
+						<p class="fragment">Understanding how a user's mind works. (subsconcious)</p>
+					</section>
+					<section>
+						<h4>Psychology: ask yourself</h4>
+						<ul>
+							<li>What is the user’s motivation to be here in the first place?</li>
+							<li>How does this make them feel?</li>
+							<li>How much work does the user have to do to get what they want?</li>
+							<li>What habits are created if they do this over and over?</li>
+							<li>What do they expect when they click this?</li>
+							<li>Are you assuming they know something that they haven’t learned yet?</li>
+							<li>Is this something they want to do again? Why? How often?</li>					
+							<li>Are you thinking of the user’s wants and needs, or your own?</li>
+							<li>How are you rewarding good behaviour?</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Usability</h3>
+						<p class="fragment">Know when something is confusing. If it leads users. (conscious)</p>
+					</section>
+					<section>
+						<h4>Usability: ask yourself</h4>
+						<ul>
+							<li>Could you get the job done with less input from the user?</li>
+							<li>Are there any user mistakes you could prevent? (Hint: Yes, there are.)</li>
+							<li>Are you being clear and direct, or is this a little too clever?</li>
+							<li>Is it easy to find (good), hard to miss (better), or subconsciously expected (best)?</li>
+							<li>Are you working with the user’s assumptions, or against them?</li>
+							<li>Have you provided everything the user needs to know?</li>
+							<li>Could you solve this just as well by doing something more common?</li>
+							<li>Are you basing your decisions on your own logic or categories, or the user’s intuition? How do you know?</li>
+							<li>If the user doesn’t read the fine print, does it still work/make sense?</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Design</h3>
+						<p class="fragment">In UX, design is how it works, and it’s something you can prove; it’s not a matter of style. It doesn't have to be super pretty.</p>
+					</section>
+					<section>
+						<h4>Design: ask yourself</h4>
+						<ul>
+							<li>Do users think it looks good? Do they trust it immediately?</li>
+							<li>Does it communicate the purpose and function without words?</li>
+							<li>Does it represent the brand? Does it all feel like the same site?</li>
+							<li>Does the design lead the user’s eyes to the right places? How do you know?</li>
+							<li>Do the colours, shapes, and typography help people find what they want and improve usability of the details?</li>
+							<li>Do clickable things look different than non-clickable things?</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Copywriting (?)</h3>
+						<p class="fragment">Brand copy supports the image of the company. UX copy gets things done as directly and simply as possible.</p>
+					</section>
+					<section>
+						<h4>Copywriting: ask yourself</h4>
+						<ul>
+							<li>Does it sound confident and tell the user what to do?</li>
+							<li>Does it motivate the user to complete their goal? Is that what we want?</li>
+							<li>Is the biggest text the most important text? Why not?</li>
+							<li>Does it inform the user or does it assume that they already know what its about?</li>
+							<li>Does it reduce anxiety?</li>
+							<li>Is it clear, direct, simple, and functional?</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Analysis</h3>
+						<p class="fragment">Using data to see if a user's experience is pleasant.</p>
+					</section>
+					<section>
+						<h4>Analysis: ask yourself</h4>
+						<ul>
+							<li>Are you using data to prove that you are right, or to learn the truth?</li>
+							<li>Are you looking for subjective opinions or objective facts?</li>
+							<li>Have you collected information that can give you those types of answers?</li>
+							<li>Do you know why users do that, or are you interpreting their behaviour?</li>
+							<li>Are you looking at absolute numbers, or relative improvements?</li>
+							<li>How will you measure this? Are you measuring the right things?</li>
+							<li>Are you looking for bad results too? Why not?</li>
+							<li>How can you use this analysis to make improvements?</li>
+						</ul>
+					</section>
+				</section>
+
 				<section>
 					<h4>Further reading</h4>
 					<ul>
-						<li>Linux CLI Basics: <a href="https://www.linux.com/learn/how-use-linux-command-line-basics-cli">https://www.linux.com/learn/how-use-linux-command-line-basics-cli</a></li>
-						<li>Git Guide: <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a></li>
-						<li>DOM: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction</a></li>
-						<li>What is the DOM: <a href="https://css-tricks.com/dom/">https://css-tricks.com/dom/</a></li>
+						<li><a href="https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/">Difference between UI and UX</a></li>
 					</ul>
 				</section>
 			</div>
