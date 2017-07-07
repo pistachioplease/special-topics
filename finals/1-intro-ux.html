@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CLI, GIT and DOM</title>
+
+		<meta name="description" content="CLI, GIT and DOM">
+		<meta name="author" content="Tolits Delizo">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<!-- <link rel="stylesheet" href="style.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!-- 1 min -->
+				<section>
+					<h1>CLI, GIT and DOM</h1>
+					<p class="fragment"><em>(wtf?)</em></p>
+					<p>
+						<small>&copy; 2017 <a href="http://tolitsdelizo.info">Tolits Delizo, MIT</a> / <a href="http://twitter.com/tolitsAhaMoment" target="_blank">@tolitsAhaMoment</a></small>
+					</p>
+				</section>
+
+				<!-- 14 min -->
+				<section>
+					<section>
+						<h2>CLI</h2>
+						<h6 class="fragment">Command-Line Interface</h6>
+						<h6 class="fragment">aka Console User Interface</h6>
+						<p class="fragment">
+							A CLI (command line interface) is a UI to a computer's operating system or an app in which the user responds to a visual prompt by typing in a command on a specified line, receives a response back from the system, and then enters another command, and so forth.
+						</p>						
+					</section>
+					<section>
+						<h3>Anatomy of a CLI</h3>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+~ cd /directory
+>>> x = x + 1
+
+~ ls -la
+
+~ rm -rf *
+						</code></pre>
+						<p class="fragment">Prompt command param1 param2 -{option}</p>
+					</section>
+					<section>
+						<h3>Cool Story</h3>
+						<p class="fragment">Trick someone to use the 'rm -rf *' command on a UNIX-based computer. This commands deletes everything on their computer. ;)</p>
+						<p class="fragment">This happened to <a href="https://thenextweb.com/media/2012/05/21/how-pixars-toy-story-2-was-deleted-twice-once-by-technology-and-again-for-its-own-good/">Toy Story 2</a></p>
+					</section>
+					<section>
+						<h3>Command line basics</h3>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+# list files in a directory
+~ ls
+
+# change directories
+~ cd
+~ cd ~
+~ cd -
+
+# create file
+~ touch filename
+
+# create directory
+~ mkdir directory_name
+
+# edit files
+~ nano path_to_file
+
+# remove file
+~ rm
+						</code></pre>
+					</section>
+				</section>
+
+				<!-- 20 miin -->
+				<section>
+					<section>
+						<h2>GIT</h2>
+						<h6 class="fragment">like a really epic save button</h6>
+						<p class="fragment">GIT is a version control system (VCS)</p>						
+						<p class="fragment">A save (commit) in Git would record differences of files and folders AND keep a historical record of each save.</p>						
+					</section>
+
+					<section>
+						<h3>Types of VCS</h3>
+						<h6 class="fragment">Local Version Control Systems</h6>
+						<img src="images/l-vcs.png" height="400" class="fragment">
+					</section>
+					<section>
+						<h3>Types of VCS</h3>
+						<h6 class="fragment">Centralized Version Control Systems</h6>
+						<img src="images/c-vcs.png" height="400" class="fragment">
+					</section>
+					<section>
+						<h3>Types of VCS</h3>
+						<h6 class="fragment">Distributed Version Control Systems</h6>
+						<img src="images/d-vcs.png" height="400" class="fragment">
+					</section>
+
+					<section>
+						<h3>Why use GIT?</h3>
+						<h6 class="fragment">History of Files</h6>
+						<img src="images/commit-detail.png" class="fragment">
+					</section>
+					<section>
+						<h3>Why use GIT?</h3>
+						<h6 class="fragment">Distributed Development</h6>
+						<img src="images/commits.png" class="fragment">
+					</section>
+					<section>
+						<h3>Why use GIT?</h3>
+						<h6 class="fragment">Community</h6>
+						<p class="fragment">Git is very popular among open source projects. This means it’s easy to leverage 3rd-party libraries and encourage others to fork your own open source code.</p>
+					</section>
+					
+					<section>
+						<h3>GIT Terms (1)</h3>
+						<p>Version Control: any system that allows you to understand the history of the file and how it has progressed</p>
+
+						<p>Commit: an annotated “snapshot” of the differences made to the system at a given point in time</p>
+					</section>
+					<section>
+						<h3>GIT Terms (2)</h3>
+						<p>Local: refers to the computer you’re working on this very minute</p>
+
+						<p>Remote: refers to an online location</p>
+
+						<p>Repository (repo): a special folder configured with Git superpowers containing all the files pertaining to your project/system</p>
+
+						<p>Github: takes your local commit history and hosts it remotely so that you can access it from any computer</p>
+					</section>
+					<section>
+						<h3>GIT Terms (3)</h3>
+						<p>Pushing: the action of taking local Git commits (and whatever work these encompass) and putting them online on Github</p>
+
+						<p>Pulling: the action of taking online Github commits and bringing them into your local machine</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>DOM</h2>
+						<h6>Document Object Model</h6>
+						<p class="fragment">The Document Object Model (DOM) represents that same document so it can be manipulated. The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript (more on this soon).</p>
+					</section>
+					<section>
+						<h3>How does DOM look like?</h3>
+					</section>						
+					<section>
+						<img src="images/dom.jpg" />
+					</section>						
+				</section>
+
+					<!-- <section>
+						<h3>Activitiy</h3>
+						<pre class="fragment"><code class="hljs" data-trim contenteditable>
+$ git remote add origin remote_repository_URL
+$ git remote -v
+
+# change url: git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+						</code></pre>
+					</section> -->
+				
+				<section>
+					<h4>Further reading</h4>
+					<ul>
+						<li>Linux CLI Basics: <a href="https://www.linux.com/learn/how-use-linux-command-line-basics-cli">https://www.linux.com/learn/how-use-linux-command-line-basics-cli</a></li>
+						<li>Git Guide: <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a></li>
+						<li>DOM: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction</a></li>
+						<li>What is the DOM: <a href="https://css-tricks.com/dom/">https://css-tricks.com/dom/</a></li>
+					</ul>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
