@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Functional Layout Design</title>
+
+		<meta name="description" content="Functional Layout Design">
+		<meta name="author" content="Tolits Delizo">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+		<!-- <link rel="stylesheet" href="style.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!-- 1 min -->
+				<section>
+					<h1>Functional Layout Design</h1>
+					<p class="fragment"><em>(design, for reals?)</em></p>
+					<p>
+						<small>&copy; 2017 <a href="http://tolitsdelizo.info">Tolits Delizo, MIT</a> / <a href="http://twitter.com/tolitsAhaMoment" target="_blank">@tolitsAhaMoment</a></small>
+					</p>
+				</section>
+
+				<!-- 6 min -->
+				<section>
+					<section>
+						<h2>Z-Pattern, F-Pattern and Visual Hierarchy</h2>
+					</section>
+					<section>
+						<img src="images/z-pattern.jpg">
+					</section>
+					<section>
+						<img src="images/f-pattern.jpg">
+					</section>
+					<section>
+						<h3>F pattern works like this</h3>
+						<p class="fragment">Start in the upper left corner, like the Z-pattern.<br>
+						Read/scan the first (head)line of the text. <br>
+						Scan down the left side of the column until you find something interesting. <br>
+						Read the interesting thing more carefully. <br>
+						Continue scanning down. </p>
+					</section>
+					<section>
+						<blockquote>A button in the top left will get more clicks than a button in the top right, which will get more clicks than a button in the bottom left, which will get more clicks than a button in the bottom right. And all of those will get more clicks than something randomly stuck in the middle …unless you do something about it.</blockquote>
+					</section>
+					<section>
+						<h3>Visual Hierarchy</h3>
+						<p class="fragment">When you consistently use typography to indicate the importance of text, and certain colours to highlight buttons, and when you give more visual weight to things that matter, it creates a visual hierarchy. i.e. — a design that people can scan easily.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Browsing vs. Searching vs. Discovery</h2>
+					</section>
+					<section>
+						<h3>Browsing</h3>
+						<p class="fragment">A browsing user will glance quickly at most of the images, one by one, starting at the top left. They might skip some, but that’s ok. Photos that the user finds attractive will get extra attention.</p>
+					</section>
+					<section>
+						<h3>To design for browsing</h3>
+						<ul>
+							<li>Make scanning easy and keep the content quick and visual.</li>
+							<li>Don’t overcrowd the page with too much stuff.</li>
+							<li>Focus on the aspects of the products that create emotional appeal. If that’s style, focus on photos.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Searching</h3>
+						<p class="fragment">A searching user will ignore a lot of products or pictures. Organization in your layout will help them systematically work through the options; they don’t want to miss any.</p>
+					</section>
+					<section>
+						<h3>To design for browsing</h3>
+						<ul>
+							<li>Focus on attributes.</li>
+							<li>Highlight the attributes that are most likely to be “critical” for most users, and nothing more. Ignore any ideas you might have about what looks “cluttered”… if the information is useful, it isn’t “clutter”. This isn’t an art gallery.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Discovery</h3>
+						<ol>
+							<li>Users only click things in the menu if they are looking for those things. Simple as that. Almost nobody “discovers” via the menu. And banners don’t work because banners never work. Haven’t you ever used the internet before? Why would people suddenly get excited about banners now?</li>
+							<li>The more experienced a user is, the less they explore for new things. In real life, only beginners explore sites or apps to find out what it can do. Experienced users know what they want, and they know how to get it, so why would they explore?</li>
+						</ol>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Page Framework</h2>
+					</section>
+					<section>
+						<p>Start with navigations and footers in wireframing.</p>
+					</section>
+					<section>
+						<h3>Footers</h3>
+						<p class="fragment">A footer is typically a list of static links that are too general and too insignificant to get a place in the main navigation.</p>
+					</section>
+					<section>
+						<h3>Navigations</h3>
+						<p class="fragment">Main Menu: If you did your information architecture properly, then you already know what should be in the main menu. It’s the first level of links in your site map (below the home page).</p>
+						<p class="fragment">Sub Menu: The sub-menu is a list of the pages “below” whatever page the user is on, in your site map.</p>
+					</section>
+					<section>
+						<h3>tl;dr</h3>
+						<p class="fragment">Create navigation and footers that work for all of the pages/screens in your app before you get into content. You’ll thank me later.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>The Fold, Images &amp; Headlines</h2>
+					</section>
+					<section>
+						<h3>The Fold</h3>
+						<p class="fragment">Part of the design that is visible before the user scrolls.</p>
+						<p class="fragment">Everything above The Fold will get maximum visibility. However, based on some studies, you can expect 60-80% of users to scroll if they expect to find something useful below the fold.</p>
+						<p class="fragment">The Fold should inform users about what is below The Fold. If user’s don’t know what is down there, they might not be interested enough to find out.</p>
+					</section>
+					<section>
+						<h3>Images</h3>
+						<p class="fragment">Images can lead the user’s eyes.</p>
+						<p class="fragment">As a general guideline, the more emotion an image adds, the more engaging it is.</p>
+					</section>
+					<section>
+						<img src="images/fld-images1.jpg">
+					</section>
+					<section>
+						<img src="images/fld-images2.jpg">
+					</section>
+					<section>
+						<h3>Headlines</h3>
+						<p class="fragment">Our eyes are most attracted to the largest, highest-contrast piece of text in a layout. So when you add a big headline to your design, you have just chosen where people will begin scanning.</p>
+						<p class="fragment">Headline is aligned with the most important content below it.</p>
+					</section>
+					<section>
+						<h3>tl;dr</h3>
+						<ul>
+							<li>Give people something to focus on before they scroll.</li>
+							<li>Make it obvious that they can scroll.</li>
+							<li>Choose images that add emotion and direct the user’s eyes.</li>
+							<li>Use headlines to direct users to what matters most.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>The Axis of Interaction</h2>
+					</section>
+					<section>
+						<img src="images/axisofinteraction.jpg">
+					</section>
+					<section>
+						<h6>Human attention is very limited</h6>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/vJG698U2Mvo" frameborder="0" allowfullscreen></iframe>
+					</section>
+					<section>
+						<p class="fragment">When you step back and look at your layout, you will notice that you have created “lines” or “edges” or “blocks” everywhere.</p>
+						<p class="fragment">They might be the aligned edge of the text, or your images, or groups of things in a row.</p>
+						<p class="fragment">Each of those edges is an Axis of Interaction. Your eyes will follow an Axis until it is interrupted, or until it ends.</p>
+						<p class="fragment">Your user’s attention is almost always focused on an Axis of Interaction, and when it stops focusing there, it will hop to the next Axis of Interaction.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Forms</h2>
+					</section>
+					<section>
+						<p><strong>Forms are one of the places you will spend a lot of your time, usability-wise.</strong> They cause confusion, mistakes, and loss of engagement, and they are one of the most valuable parts of your site.</p>
+					</section>
+					<section>
+						<h3>One long page or a few short pages?</h3>
+						<p class="fragment">It is a good general rule to keep forms as short as possible, but don’t be afraid to break it into pages if it makes sense, or if you want to save information in steps, just in case the user quits in the middle.</p>
+						<p class="fragment">The main thing is to make a form feel simple. Keep related questions together. Eliminate questions you don’t really need. And use as many pages as you need; no more, no less.</p>
+					</section>
+					<section>
+						<h3>Input Types</h3>
+						<p class="fragment">The purpose of a form is to get input. i.e. — information from the user.</p>
+					</section>
+					<section>
+						<h3>Labels &amp; Instructions</h3>
+						<p class="fragment">When you’re labeling your inputs — how else will the user know what to do with them? — be short, clear, legible, and put them close to the input they are labeling. In the grand scheme of things, that will solve 99% of labeling problems.</p>
+
+						<p class="fragment">Sometimes instructions are needed if the question is unconventional or complicated. In that case, it can be helpful to add a little explanation. If it’s only a few words, put it near the label and the input. If it’s more than a few words, put it on the side of the form instead of within it, so it doesn’t interrupt the flow of users who know what they’re doing.</p>
+					</section>
+					<section>
+						<h3>Preventing &amp; Handling Mistakes</h3>
+						<p class="fragment">When it comes to forms, mistake happen. It’s our job to prevent as many as possible, and handle the rest as gracefully as possible.</p>
+						<p class="fragment">Giving users an example of the input you expect can also reduce errors. It can be directly in a text field, for example, or part of your instructions.</p>
+					</section>
+					<section>
+						<h3>Speed vs. Mistakes</h3>
+						<p class="fragment">For common questions, a form with labels that are left-aligned & above the input will get users through it as fast as possible. It keeps everything on the Axis of Interaction.</p>
+						<p class="fragment">For uncommon or complex questions, a form with labels to the left of the input (on the same row) will slow users down a little, but create less errors.</p>
+						<p class="fragment">For most forms, put the “done” button on the left, on the Axis of Interaction.</p>
+						<p class="fragment">If the form will do something really destructive or critical, put it on the right, so people pause to look for it instead of clicking it by reflex.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Calls-To-Action, Instructions &amp; Labels</h2>
+					</section>
+					<section>
+						<h4>Four places to communicate with users</h4>
+						<ol>
+							<li>Calls-to-Action</li>
+							<li>Instructions</li>
+							<li>Labels</li>
+							<li>Longer, persuasive text.</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Calls-to-Action</h3>
+						<p class="fragment">A “CTA” is the headline or the text on/near a button that tells people what to do.</p>
+					</section>
+					<section>
+						<h5>General Formula for a good CTA</h5>
+						<p class="fragment">VERB + BENEFIT + URGENT TIME or PLACE</p>
+						<p class="fragment"><strong>Verb:</strong> is the thing they will do.</p>
+						<p class="fragment"><strong>Benefit:</strong> is what they will get (if the verb didn’t already include it).</p>
+						<p class="fragment"><strong>Urgency:</strong> is a time frame like “now” or a place like “here”. The word “free” can also create urgency if it fits your situation.</p>
+					</section>
+					<section>
+						<p class="fragment">Instructions should be short, literal, and direct. No lingo. No industry terms. No clever jokes or sarcasm or funny business. Don’t be too wordy or too soft.</p>
+						<p class="fragment">Tell them exactly what to do. Use the simplest words and phrases you know. Write to everyone like they are smart children, or someone who is just learning the language. Don’t make it stupid, just make it clear.</p>
+					</section>
+					<section>
+						<p class="fragment"><strong>Bad:</strong> “Swing on down to the clicky spot when yer all set!”</p>
+						<p class="fragment"><strong>Also bad:</strong> “All input in this area is required data and must be successfully submitted to initiate the account creation process.”</p>
+						<p class="fragment"><strong>Stupid:</strong> “Look at you! You’re so good at forms! When you get everything typed in there like a good form filler-outer then you should just go ahead and click that fancy yellow button below! You’re almost there, champ!”</p>
+						<p class="fragment"><strong>Good:</strong> “Answer every question. Then click the yellow button labelled done at the bottom of this page.”</p>
+					</section>
+					<section>
+						<h3>Labels</h3>
+						<p class="fragment">Use the most common, easiest, most basic version of the label that you can imagine. If your label can have more than one type of answer, it might not be clear enough yet.</p>
+					</section>
+					<section>
+						<p class="fragment">Bad: “Where your heart is…”</p>
+						<p class="fragment">Not good: “The place where you live”</p>
+						<p class="fragment">Better: “Address”</p>
+						<p class="fragment">Best: “Home Address”</p>
+						<p class="fragment">Labels also apply to buttons, which is something that a lot of designers overlook.</p>
+						<p class="fragment">If you skip the headline and the instructions, will you still understand what the buttons do? If not, make the labels better.</p>
+						<p class="fragment">Bad Button Labels: “Ok” or “Yes”</p>
+						<p class="fragment">Good Button Labels: “Delete Your Account” or “Save Changes”</p>
+					</section>
+					<section>
+						<h2>Primary &amp; Secondary Buttons</h2>
+					</section>
+					<section>
+						<img src="buttonsexample.jpg" alt="">
+						<ol>
+							<li>Primary Actions that are helpful to our goals.</li>
+							<li>Secondary Actions that are not.</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Primary Buttons</h3>
+						<p class="fragment">Some actions that are available to the user are productive, like registering, buying, submitting content, saving, sending, sharing, and so on. They produce things that didn’t exist before.</p>
+						<p class="fragment">Buttons that execute primary actions — primary buttons — should be as visible as possible.</p>
+						<p class="fragment"><strong>Primary Style:</strong> High contrast compared to the background. (Very different colour or shade).</p>
+						<p class="fragment"><strong>Position in Layout:</strong> On or near the Axis of Interaction so users notice them first, by reflex.</p>
+					</section>
+					<section>
+						<h3>Secondary Buttons</h3>
+						<p class="fragment">Some actions that are available to the user are counter-productive, like canceling, skipping, resetting, declining an offer, and so on. They remove or stop the creation of new things.</p>
+						<p class="fragment">Therefore, buttons that execute secondary options — secondary buttons — should be less visible, to prevent accidental or “reflexive” clicks.</p>
+						<p class="fragment"><strong>Secondary Style:</strong> Low contrast compared to the background (a similar colour or shade).</p>
+						<p class="fragment"><strong>Position in Layout:</strong> away from the Axis of Interaction so users only notice them when they are looking for them.</p>
+					</section>
+					<section>
+						<h3>Special Buttons</h3>
+						<p class="fragment">In some cases, you will have one type of action that is unique to your site or app, which requires special focus. Design a special button for this, so it stands out in your design (pattern breaking).</p>
+						<p class="fragment">Amazon’s “Add to Basket” buttons, Pinterest’s “Pin it” button, and Facebook’s old thumbs-up “Like” button all got this treatment (more or less).</p>
+					</section>
+				</section>
+
+				<section>
+					<h4>Further reading</h4>
+					<ul>
+						<li><a href="https://www.lukew.com/resources/web_form_design.asp">Web Form Design</a></li>
+					</ul>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
