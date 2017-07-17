@@ -44,7 +44,7 @@
 				<!-- 1 min -->
 				<section>
 					<h1>Designing with Data</h1>
-					<p class="fragment"><em>(sUX?)</em></p>
+					<p class="fragment"><em>(data ah!)</em></p>
 					<p>
 						<small>&copy; 2017 <a href="http://tolitsdelizo.info">Tolits Delizo, MIT</a> / <a href="http://twitter.com/tolitsAhaMoment" target="_blank">@tolitsAhaMoment</a></small>
 					</p>
@@ -53,23 +53,154 @@
 				<!-- 6 min -->
 				<section>
 					<section>
-						<h2>What is UX?</h2>
-						<p class="fragment">UX stands for User Experience.</p>						
-						<p class="fragment">Everything has a user experience.</p>						
-						<p class="fragment">You don't create user experience, our job is to make it good.</p>	
+						<h2>What is Data?</h2>
+						<p class="fragment"><strong>Data is objective.</strong></p>
+						<p class="fragment">Data measures user behaviour. What they do. How many times they did it. How long it took. And so on.</p>
+						<p class="fragment">It is collected by a computer, so it can’t influence the user. It has well-defined measurements, so there is a very low margin of error. It can measure millions of people, with no effort from you. And it can tell you things about your users like which browser they use or which country they are in.</p>
+						<p class="fragment">And data never lies.</p>
 					</section>
 					<section>
-						<p>Goal of UX is make users <em>effective</em>.</p>
+						<h3>Data is Made of People</h3>
 					</section>
 					<section>
-						<h6>UX is actually doing the process of User Experience Design</h6>
+						<h3>Collecting Objective Data</h3>
+						<p class="fragment">Analytics — Google and many other companies offer cheap or free ways to track what your users do, anonymously. Basically, every time they load a page or click something, you will know.</p>
+						<p class="fragment">A/B Tests — Design two versions of the same thing and launch both! You will know which one works better, because you will test it with real people, in real time.</p>
+						<p class="fragment">Eye-Tracking — This is done in a lab, but the user can’t control it. Special software and equipment are used to measure where the users look as they use your design, so you know where you have guided them well, or not.</p>
+						<p class="fragment">ClickTale — This is one example of using heatmaps for clicks and scrolling and flows, but there are others. ClickTale’s software allows you to anonymously record the interface as real users use it. Their input is hidden, but you see where they click, where the mouse goes, how far they scroll, and which pages they see as they move through your design. Super useful.</p>
+						<p class="fragment">Search Logs — Many people don’t realize that a search field on your site can save every word that is typed into it. If people are searching for it, it means they can’t find it, so those logs are super valuable for improving your information architecture and layouts!</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Summary Statistics</h2>
+					</section>
+					<section>
+						<h3>Sessions (Total Visits) &amp; Users (Unique Visits)</h3>
+						<p class="fragment">Total Visits measures the number of times your site has been visited, total.</p>
+						<p class="fragment">Unique Visits is a little different though. If I visit your site 50 times, I am only 1 unique visitor. And technically, it counts unique devices not “people”.</p>		
+					</section>
+					<section>
+						<h4>What they mean:</h4>
+						<p class="fragment">Comparing these numbers will tell you whether your traffic is:</p>
+						<p class="fragment">High quality — Total is much higher than Uniques. </p>
+						<p class="fragment">High quantity — Total is about the same as Uniques, and Uniques are higher than last month.</p>
+						<p class="fragment">Both — Uniques are higher than last month and Total is much higher than Uniques.</p>
+						<p class="fragment">Neither — Uniques are lower than last month and Total is about the same as Uniques.</p>
+					</section>
+					<section>
+						<p class="fragment">“Uniques” are a more authentic representation of your traffic, but I would rather have 1000 people who visit every day than 10,000 people who visit once a month. Then again, if 1 guy visits my site a million times, that’s not particularly useful either, and he probably has issues.</p>
+					</section>
+					<section>
+						<h3>Pageviews</h3>
+						<p class="fragment">What it measures: One pageview is counted every time any visitor loads any page.</p>
+
+						<p class="fragment">What it means: You can think of pageviews as a “general indicator” of traffic, because it describes the total amount of content being seen, overall, and it ignores most other factors.</p>
+						<p class="fragment">If your site runs on banner ads this is an important number to watch.</p>
+						<p class="fragment">If your site is content-driven, like news, then having a lot of pageviews overall might be more important.</p>
+					</section>
+					<section>
+						<h3>Pages-per-Visit</h3>
+						<p class="fragment">What it measures: the average number of pages each visitor will see, each time they visit. You can also think of it as the “clicks” per visit, if that helps (although technically not accurate).</p>
+
+						<p class="fragment">What it means: If your site is more focused on tasks or social interactions, then the Pages-per-Visit might be a better metric to watch than pageviews.</p>
+						<p class="fragment">On the other hand, if you are Google Search, you want this number to be as low as possible, because good search results give you what you want on the first page.</p>
+					</section>
+					<section>
+						<h3>Time-per-Visit</h3>
+						<p class="fragment">What it measures: how long each visit lasts (on average). It can be very important to compare Time-per-Visit and Pages-per-Visit.</p>
+					</section>
+					<section>
+						<p class="fragment">What it means: In a perfect world, content-based sites want visitors to read the whole article, and read a lot of articles. That would be a long Time-per-Visit, and many Pages-per-Visit.</p>
+						<p class="fragment">If people see a lot of Pages-per-Visit, but don’t spend much Time-per-Visit, they might be looking for something and not finding it (bad), or they might be completing tasks really quickly (good). It depends!</p>
+						<p class="fragment">If the Time-per-Visit is high, but Pages-per-Visit is low, your navigation might suck (bad), or it might mean the articles are long and the users are really engaged (good)! It depends!</p>
+						<p class="fragment">If both Time- and Pages-per-Visit are low, that might be a bad sign, unless the purpose of your site is to get in and get out quickly, like Google.</p>
+					</section>
+					<section>
+						<h3>Bounce Rate</h3>
+						<p class="fragment">What it measures: the people that only see one page and then leave without clicking anything.</p>
+
+						<p class="fragment">What it means: In general, we usually think of this like people saying “no” to your site. BUT… there are some exceptions.</p>
+						<p class="fragment">Blogs tend to have a higher bounce rate, because they are designed for single-page viewing: you either scan the list of recent posts, or you came for a specific post.</p>
+						<p class="fragment">The structure of the site and the source of your traffic can have a huge effect on your bounce rate, so even though it looks simple, bounce rate can be a complex indicator.</p>
+					</section>
+					<section>
+						<h3>New vs. Return Visitors</h3>
+						<p class="fragment">What it measures: If a person (actually a device) has been to your site before, they are “returning”. If not, they are “new”.</p>
+
+						<p class="fragment">What it means: Returning visitors know more about your site, so they often “bounce” less and see more pages. If they are returning they must like what you do, so they often spend more time on the site as well.</p>
+						<p class="fragment">However, “new” visitors are good, because it means our site getting exposure to more people.</p>
+						<p class="fragment">The main thing is the ratio of new to returning. If you have no returning visitors then your site is either new, or terrible, because nobody is coming back. If you have only returning visitors then your users might be loyal, but the site is dying, because nobody new is finding it.</p>
+						<p class="fragment">And, in general, the more mature a site is, the more return visitors you will have — as a percentage — because return a lot of visitors who come back often are hard to beat with normal search traffic or ad campaigns.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Designing with Data: Graph Shapes</h2>
+					</section>
+					<section>
+						<p>There are two graph styles that human behavior creates fairly often: <em>Traffic and Structured Behaviour</em>.</p>
+					</section>
+					<section>
+						<h3>Traffic Graphs</h3>
+						<p class="fragment">These graphs show the number of people that did something, over time. Like the number of visitors per day. We call that “traffic”.</p>
+						<p class="fragment">Traffic will always be moving up and down a little, because random things in the world happen every day. Even when your site doesn’t change at all.</p>
+						<p class="fragment">That’s why we can never assume that a small change in traffic was caused by a new feature or a design change.</p>
+					</section>
+					<section>
+						<img src="images/graph-generaltrend.jpg">
+					</section>
+					<section>
+						<img src="images/graph-burst.jpg">
+					</section>
+					<section>
+						<img src="images/graph-predictabletraffic.jpg">
+					</section>
+					<section>
+						<h3>Structure Behaviour</h3>
+						<p class="fragment">The other big type of graph shows what people are doing. The date or hour when they did isn’t as relevant. You have a big effect on this type of behaviour via your information architecture.</p>
+					</section>
+					<section>
+						<img src="graph-exponential.jpg">
+					</section>
+					<section>
+						<img src="graph-exponentialbroken.jpg">
+					</section>
+					<section>
+						<img src="graph-exponentialwithengagement.jpg">
+					</section>
+					<section>
+						<img src="graph-exponentialconversion.jpg">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>A/B Tests</h2>
+					</section>
+					<section>
+						<h3>What is an A/B Tests</h3>
+						<p class="fragment">An A/B test is a way of asking thousands or millions of real visitors which option is best. You design all the options you want to compare, and launch them all!</p>
+						<p class="fragment">You can see which version of the design created more clicks.</p>
+						<p class="fragment">You can do it with 2 versions, or 20 version. Just remember: only part of your traffic can see each one, so the more versions you are testing, the more traffic or time you will need.</p>
+					</section>
+					<section>
+						<h3>Good to Remember</h3>
+						<ol>
+							<li>A/B Testing is usually free, other than the time it takes to design and create the pages you’re testing. </li>
+							<li>The only way to compare two designs is to run them both at the same time, using (roughly) equal numbers of people for both.</li>
+							<li>An A/B Test is most reliable when you only change one detail.</li>
+							<li>Testing two totally different pages, like a home page and a checkout form, is completely useless.</li>
+						</ol>
 					</section>
 				</section>
 
 				<section>
 					<h4>Further reading</h4>
 					<ul>
-						<li><a href="https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/">Difference between UI and UX</a></li>
+						<li><a href="https://www.clicktale.com/">ClickTale</a></li>
 					</ul>
 				</section>
 			</div>
