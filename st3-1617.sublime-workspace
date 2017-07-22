@@ -520,28 +520,28 @@
 	"buffers":
 	[
 		{
-			"file": "4-wdb-css-bootstrap.html",
-			"settings":
-			{
-				"buffer_size": 4897,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "evenfibo.py",
-			"settings":
-			{
-				"buffer_size": 214,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "/var/www/html/speaking/st-activities/index.html",
 			"settings":
 			{
 				"buffer_size": 856,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "finals/5-user-psychology.html",
+			"settings":
+			{
+				"buffer_size": 14228,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "finals/6-designing-with-data.html",
+			"settings":
+			{
+				"buffer_size": 13514,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -632,10 +632,13 @@
 	"expanded_folders":
 	[
 		"/var/www/html/speaking/special-topics-3rd-1617",
-		"/var/www/html/speaking/special-topics-3rd-1617/images"
+		"/var/www/html/speaking/special-topics-3rd-1617/finals"
 	],
 	"file_history":
 	[
+		"/var/www/html/speaking/special-topics-3rd-1617/finals/4-functional-layout-design.html",
+		"/var/www/html/speaking/special-topics-3rd-1617/evenfibo.py",
+		"/var/www/html/speaking/special-topics-3rd-1617/4-wdb-css-bootstrap.html",
 		"/var/www/html/speaking/special-topics-3rd-1617/activities/index.html",
 		"/var/www/html/speaking/special-topics-3rd-1617/bootstrap-directory-structure.txt",
 		"/home/td/Documents/Project Euler/2 even_fibonacci_numbers.py",
@@ -760,14 +763,11 @@
 		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/header/header.php",
 		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/header/navbar.php",
 		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/footer/foot.php",
-		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/footer/widgets.php",
-		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/header/head.php",
-		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/footer.php",
-		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/header.php"
+		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/footer/widgets.php"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -909,6 +909,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Question Time",
 			"http://www.tutorialrepublic.com",
 			" class=\"form-control\"",
 			" class=\"form-group\"",
@@ -1035,8 +1036,7 @@
 			"fullCalendar",
 			"$dth",
 			"performance_uuid",
-			"archive",
-			"refreshPositionPerformance"
+			"archive"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1182,76 +1182,11 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "4-wdb-css-bootstrap.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4897,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4888,
-								4888
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"bs_sintax": "html",
-							"buffer_scroll_name": "09cee034",
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 7461.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "evenfibo.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 214,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								214,
-								214
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"bs_sintax": "python",
-							"buffer_scroll_name": "000ec02e",
-							"spell_check": false,
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "/var/www/html/speaking/st-activities/index.html",
 					"semi_transient": false,
 					"settings":
@@ -1263,8 +1198,8 @@
 						"selection":
 						[
 							[
-								428,
-								428
+								856,
+								856
 							]
 						],
 						"settings":
@@ -1273,13 +1208,79 @@
 							"bs_sintax": "plain text",
 							"buffer_scroll_name": "1c8ad663",
 							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 560.0,
+						"translation.y": 80.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "finals/5-user-psychology.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6240,
+								6240
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bs_sintax": "html",
+							"buffer_scroll_name": "25ded427",
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2880.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "finals/6-designing-with-data.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13514,
+								13514
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "html",
+							"buffer_scroll_name": "d569cd43",
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1882.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1295,8 +1296,8 @@
 						"selection":
 						[
 							[
-								217,
-								282
+								2090,
+								1469
 							]
 						],
 						"settings":

@@ -103,7 +103,7 @@
 					<section>
 						<h3>Defects and Vulnerabilities</h3>
 						<p class="fragment">Many breaches begin by exploiting a vulnerability<br>
-						- This is a security-relevant software defect that can beexploited to effect an undesired behavior</p>
+						- This is a security-relevant software defect that can be exploited to affect an undesired behavior</p>
 						<p class="fragment">A software defect is present when the software behaves incorrectly, i.e., it fails to meet its requirements</p>
 						<p class="fragment">Defects occur in the software’s design and its implementation <br>
 						- A flaw is a defect in the design <br>
@@ -143,6 +143,40 @@
 						flaws, and/or <br>
 						make them <br>
 						harder to exploit</h6>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What is Software Security?</h2>
+						<p class="fragment">Software security is a kind of computer security that focuses on the secure design and implementation of software! (Using the best languages, tools, methods)</p>
+						<p class="fragment">Focus of study: the code</p>
+						<p class="fragment">By contrast: Many popular approaches to security treat software as a black box (ignoring the code) <br>
+						OS security, anti-virus, firewalls
+						</p>
+					</section>
+					<section>
+						<h3>Why software security?</h3>
+						<img src="images/softsec.png">
+						<p class="fragment">Software Security aims to address weaknesses directly</p>
+					</section>
+					<section>
+						<h3>Operating System Security</h3>
+						<p class="fragment">Operating systems mediate a program’s actions!</p>
+						<p class="fragment">Enforceable policies control actions</p>
+					</section>
+					<section>
+						<h3>Limitations of OS Security</h3>
+						<ul>
+							<li>Cannot enforce application-specific policies, which can be too fine-grained</li>
+							<li>Cannot (precisely) enforce info-flow policies!
+								<ul>									
+									<li>An operating system typically implements an execution monitor: decisions are based on past and current actions</li>
+									<li>Information flow policies: A non-action may reveal something about a secret without leaking it directly</li>
+								</ul>								
+							</li>
+						</ul>
+
 					</section>
 				</section>
 
