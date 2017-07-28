@@ -520,64 +520,37 @@
 	"buffers":
 	[
 		{
-			"file": "/var/www/html/speaking/st-activities/index.html",
+			"file": "/home/td/Documents/03 TEACHING/1617-3rd Tri-Special Topics/finals/finals exam",
 			"settings":
 			{
-				"buffer_size": 856,
+				"buffer_size": 1603,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "finals/5-user-psychology.html",
+			"file": "/home/td/Documents/03 TEACHING/1617-3rd Tri-Special Topics/finals/finalWAnswers.txt",
 			"settings":
 			{
-				"buffer_size": 14228,
+				"buffer_size": 5276,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "finals/6-designing-with-data.html",
+			"file": "finals/3-information-architecture.html",
 			"settings":
 			{
-				"buffer_size": 13514,
+				"buffer_size": 10850,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/var/www/html/speaking/st-activities/login.html",
+			"file": "finals/1-intro-ux.html",
 			"settings":
 			{
-				"buffer_size": 2963,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/var/www/html/speaking/st-activities/fluid-layout.html",
-			"settings":
-			{
-				"buffer_size": 3935,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/var/www/html/speaking/st-activities/fixed-layout.html",
-			"settings":
-			{
-				"buffer_size": 3462,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/var/www/html/speaking/st-activities/grid.html",
-			"settings":
-			{
-				"buffer_size": 1482,
+				"buffer_size": 10887,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -636,6 +609,13 @@
 	],
 	"file_history":
 	[
+		"/var/www/html/speaking/st-activities/index.html",
+		"/var/www/html/speaking/special-topics-3rd-1617/finals/5-user-psychology.html",
+		"/var/www/html/speaking/special-topics-3rd-1617/finals/6-designing-with-data.html",
+		"/var/www/html/speaking/st-activities/login.html",
+		"/var/www/html/speaking/st-activities/fluid-layout.html",
+		"/var/www/html/speaking/st-activities/fixed-layout.html",
+		"/var/www/html/speaking/st-activities/grid.html",
 		"/var/www/html/speaking/special-topics-3rd-1617/finals/4-functional-layout-design.html",
 		"/var/www/html/speaking/special-topics-3rd-1617/evenfibo.py",
 		"/var/www/html/speaking/special-topics-3rd-1617/4-wdb-css-bootstrap.html",
@@ -756,14 +736,7 @@
 		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/style.css",
 		"/var/www/wp_amcham/.htaccess",
 		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/functions.php",
-		"/var/www/hrmonise5/app/User.php",
-		"/home/td/Documents/00 WORK/hrmonize/migrations/20170126/hrmonise4_generic_20170126.sql",
-		"/home/td/Documents/00 WORK/mysql.sql",
-		"/home/td/Documents/00 WORK/fijiamcham/wp_amcham.txt",
-		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/header/header.php",
-		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/header/navbar.php",
-		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/footer/foot.php",
-		"/var/www/wp_amcham/wp-content/themes/Artificial-Reason-WP/footer/widgets.php"
+		"/var/www/hrmonise5/app/User.php"
 	],
 	"find":
 	{
@@ -1182,70 +1155,66 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/var/www/html/speaking/st-activities/index.html",
+					"file": "/home/td/Documents/03 TEACHING/1617-3rd Tri-Special Topics/finals/finals exam",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 856,
+						"buffer_size": 1603,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								856,
-								856
+								1603,
+								1603
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
 							"bs_sintax": "plain text",
-							"buffer_scroll_name": "1c8ad663",
+							"buffer_scroll_name": "14ed7aaf",
 							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 80.0,
+						"translation.y": 346.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "finals/5-user-psychology.html",
+					"file": "/home/td/Documents/03 TEACHING/1617-3rd Tri-Special Topics/finals/finalWAnswers.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14228,
+						"buffer_size": 5276,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6240,
-								6240
+								5202,
+								5202
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"bs_sintax": "html",
-							"buffer_scroll_name": "25ded427",
+							"bs_sintax": "plain text",
+							"buffer_scroll_name": "0f1131aa",
 							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2880.0,
+						"translation.y": 4122.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1253,169 +1222,66 @@
 				},
 				{
 					"buffer": 2,
-					"file": "finals/6-designing-with-data.html",
-					"semi_transient": false,
+					"file": "finals/3-information-architecture.html",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 13514,
+						"buffer_size": 10850,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13514,
-								13514
+								9801,
+								9801
 							]
 						],
 						"settings":
 						{
 							"bs_sintax": "html",
-							"buffer_scroll_name": "d569cd43",
+							"buffer_scroll_name": "54c6b2d3",
 							"spell_check": false,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1882.0,
+						"translation.y": 4234.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "/var/www/html/speaking/st-activities/login.html",
+					"file": "finals/1-intro-ux.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2963,
+						"buffer_size": 10887,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2090,
-								1469
+								10887,
+								10887
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"bs_sintax": "plain text",
-							"buffer_scroll_name": "1e887579",
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/var/www/html/speaking/st-activities/fluid-layout.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3935,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								516,
-								234
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"bs_sintax": "plain text",
-							"buffer_scroll_name": "1c7dc6e2",
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/var/www/html/speaking/st-activities/fixed-layout.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3462,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1143,
-								1143
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"bs_sintax": "plain text",
-							"buffer_scroll_name": "3f8113e8",
+							"bs_sintax": "html",
+							"buffer_scroll_name": "dcfeb5a6",
 							"spell_check": false,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 2288.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/var/www/html/speaking/st-activities/grid.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1482,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1329,
-								1329
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"bs_sintax": "plain text",
-							"buffer_scroll_name": "f5ea3c22",
-							"spell_check": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
